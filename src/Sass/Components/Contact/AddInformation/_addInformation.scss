@@ -1,0 +1,49 @@
+.add-information__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    order: 1;
+    
+    .add-information__contact {
+         display: flex;
+         flex-direction: column;
+         gap: 1.2rem;
+        .add-information__mail, .add-information__map {
+            display: flex;
+            gap: 0.3rem;
+
+            .add-information__icon, .add-information__text {
+                @include textStyle($white, 18px, 500);
+            }
+
+            .add-information__text {
+                font-weight: 700;
+                height: 18px;
+            }
+        }
+
+        .add-information__map {
+            .add-information__text {
+                height: 20px;
+            }
+        }
+    }
+
+    .add-information__social {
+        display: flex;
+        gap: 1.5rem;
+        
+        .add-information__social-icon {
+            @include textStyle($white, 2rem, 500);
+            cursor: pointer;
+
+            &:hover {
+                color: $darkPurple;
+            }
+        }
+    }
+
+    @media (min-width: 1000px) {
+        gap: 7rem;
+    }
+}

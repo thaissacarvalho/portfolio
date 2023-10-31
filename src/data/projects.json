@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "../../public/project-linkbio.svg",
+        "technologies": ["Vite", "React", "Tailwind CSS"],
+        "title": "Linkbio",
+        "time": "Julho/2023 a Agosto/2023",
+        "description": "O direcionador de links afim de ao clicar, você ser levado ao local onde tenha as minhas redes sociais.",
+        "code": "https://github.com/thaissacarvalho/bio",
+        "webSite": "bio-linkbio.vercel.app/"
+    },
+    {
+        "id": 2,
+        "image": "../../public/project-calculadora.svg",
+        "technologies": ["HTML", "CSS", "Javascript"],
+        "title": "Calculadora",
+        "time": "Agosto/2023",
+        "description": "Criado com a Onebitcode, ele onde possui o intuito de uma calculadora real que faz contas básicas e intermediárias.",
+        "code": "https://github.com/thaissacarvalho/Calculadora",
+        "webSite": "https://thaissacarvalho.github.io/Calculadora/"
+    },
+    {
+        "id": 3,
+        "image": "",
+        "technologies": [],
+        "title": "",
+        "time": "",
+        "description": "",
+        "code": "",
+        "webSite": ""
+    }
+]

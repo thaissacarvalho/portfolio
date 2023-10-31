@@ -1,0 +1,10 @@
+.home__page {
+    background-color: $bgColor;
+    @include disFlexCenter;
+    flex-direction: column;
+
+    .home__line {
+        @include sizeItens(100%, 0.0625rem, 0);
+        background-color: $gray;
+    }
+}

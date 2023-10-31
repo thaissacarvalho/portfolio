@@ -1,0 +1,9 @@
+.techno__container {
+    @include disFlexBetween;
+    padding: 0.5rem 1rem 0;
+
+    .techno__item {
+        @include textStyle($white, 0.75rem, 600);
+        text-decoration: underline solid $darkPurple;
+    }
+}

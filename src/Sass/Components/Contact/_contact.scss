@@ -1,0 +1,40 @@
+@import "./AddInformation/addInformation";
+@import "./Form/form";
+@import "./TitleContact/titleContact";
+
+.contact__container {
+    width: 50%;
+    @include disFlexCenter;
+    flex-direction: column;
+    gap: 3rem;
+
+    .add-information__container {
+        order: 2;
+    }
+
+    .form {
+        order: 1;
+        justify-self: flex-end;
+    }
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 7rem;
+        grid-template-areas:
+            "title form form"
+            "addInformation form form"
+            "addInformation form form";
+        justify-items: center;
+
+        .add-information__container {
+            order: 1;
+        }
+
+        .form {
+            order: 2;
+            grid-area: form;
+        }
+    }
+}

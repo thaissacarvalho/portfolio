@@ -1,0 +1,26 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import "./Abstracts/abstracts";
+@import "./Components/componentes";
+@import "./Layout/layout";
+@import "./Pages/home";
+
+
+body {
+    font-family: $family-text;
+    background-color: $bgColor;
+}
+
+h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+    padding-left: 0;
+}

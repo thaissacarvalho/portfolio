@@ -1,0 +1,15 @@
+.header {
+    @include sizeItens(100%, 3.125rem, 0);
+    @include disFlexCenter;
+    background-color: $black;
+
+    .navbar__container {
+        @include sizeItens(90%, auto, 0);
+        @include disFlexBetween;
+        align-items: center;
+    }
+
+    @media (min-width: 768px) {
+        height: 4.6875rem;
+    }
+}

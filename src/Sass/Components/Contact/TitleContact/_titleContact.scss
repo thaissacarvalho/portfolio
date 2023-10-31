@@ -1,0 +1,13 @@
+.title-contact__container {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    .title {
+        height: 40px;
+    }
+
+    .title-contact__text {
+        @include textStyle($gray, 0.875rem, 600);
+    }
+}

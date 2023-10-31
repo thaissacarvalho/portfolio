@@ -1,0 +1,5 @@
+.apresentation__line {
+    align-self: start;
+    @include sizeItens(60%, 0.1875rem, 0);
+    background-color: $darkPurple;
+}

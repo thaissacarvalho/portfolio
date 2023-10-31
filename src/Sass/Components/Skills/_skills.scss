@@ -1,0 +1,21 @@
+@import "./SkillDescripton/skillDescripton";
+@import "./TechStackCard/techStackCard";
+
+.skills__container {
+    width: 90%;
+    @include disFlexCenter;
+    flex-direction: column;
+    gap: 2rem;
+
+    .skills__techStack {
+        @include disFlexCenter;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @media (min-width: 1024px){
+            @include disFlexBetween;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}   

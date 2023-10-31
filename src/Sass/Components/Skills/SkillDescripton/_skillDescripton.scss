@@ -1,0 +1,13 @@
+.skill-description__container {
+    @include disFlexCenter;
+    flex-direction: column;
+
+    .title {
+        height: 48px;
+    }
+
+    .skill-description__description {
+        @include textStyle($white, 1.125rem, 500);
+        text-align: center;
+    }
+}

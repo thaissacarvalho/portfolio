@@ -1,0 +1,65 @@
+.about-me__container {
+    @include disFlexCenter;
+    flex-direction: column;
+
+    .about-me__hero {
+        @include disFlexCenter;
+        flex-direction: column;
+        align-self: start;
+
+        .hero__im {
+            align-self: start;
+            @include textStyle($gray, 1.5rem, 700);
+        }
+
+        .hero__nameStack {
+            .nameStack__name {
+                @include textStyle($darkPurple, 2.2rem, 700);
+
+                @media (min-width: 1024px) {
+                    font-size: 3rem;
+                }
+            }
+
+            .nameStack__stack {
+                @include textStyle($white, 1.5rem, 500);
+
+                @media (min-width: 1024px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .about-me__description {
+        @include disFlexCenter;
+        flex-direction: column;
+        gap: 1rem;
+
+        .description__text {
+            @include textStyle($gray, 1.3rem, 400);
+
+            @media (min-width: 1024px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .about-me__resume {
+        @include sizeItens(9rem, 3rem, 0.5rem);
+        @include textStyle($white, 1.2rem, 600);
+        background-color: transparent;
+        border: 0.0625rem solid $darkPurple;
+        align-self: start;
+        align-items: center;
+        padding: 12px;
+
+        &:hover {
+            background-color: $darkPurple;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 683px;
+    }
+}

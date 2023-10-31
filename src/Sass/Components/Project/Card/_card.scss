@@ -1,0 +1,68 @@
+@import "./TechnologiesList/technologies";
+
+.card__container {
+    @include sizeItens(100%, 100%, 0);
+    @include disFlexCenter;
+    gap: 3rem;
+    flex-direction: column;
+
+    .card__item {
+        @include sizeItens(14.5rem, 28.125rem, 0.625rem);
+        background-color: transparent;
+        border: 0.125rem solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to bottom, $darkPurple, $white);
+
+        .card__header {
+            --bs-card-cap-padding-x: 0;
+            --bs-card-cap-padding-y: 0;
+            width: 100%;
+        }
+
+        .card__body {
+            display: flex;
+            flex-direction: column;
+            flex: 0;
+            gap: 1.2rem;
+
+            .card__titleTime {
+                display: flex;
+                gap: 0.1rem;
+                flex-direction: column;
+
+                .card__title {
+                    @include textStyle($white, 1.125rem, 700);
+                    height: 1.0625rem;
+                }
+
+            .card__time {
+                    @include textStyle($gray, 0.375rem, 400);
+                }
+            }
+
+            .card__description {
+                @include textStyle($white, 0.875rem, 500);
+            }
+        }
+
+  
+
+        .card__footer {
+            @include disFlexCenter;
+
+            .card__link {
+                @include sizeItens(92px, 24px, 4px);
+                background-color: $darkPurple;
+                @include textStyle($white, .5rem, 500);
+                @include disFlexCenter;
+            }
+        }
+    }
+
+    @media(min-width: 768px) {
+        @include disFlexBetween;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

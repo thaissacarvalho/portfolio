@@ -1,0 +1,73 @@
+.navbar {
+    background-color: transparent;
+    border: 0 none;
+
+    .container-fluid {
+        --bs-gutter-x: 0;
+
+        .navbar-toggler {
+            @include sizeItens(32px, 32px, 0);
+            padding: 0;
+
+            .navbar__menu-icon {
+                @include textStyle($darkPurple, 1.5rem, bold);
+            }
+        }
+
+        .navbar-nav {
+            justify-content: center;
+            gap: 2.5rem;
+            align-items: center;
+
+            .nav-link {
+                @include textStyle($white, 1.3rem, 500);
+                padding: 0;
+                height: 22px;
+            }
+
+            .nav-link:hover {
+                color: $darkPurple;
+                text-decoration: underline;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.offcanvas {
+    max-width: 100%;
+    width: 100%;
+    background: hsla(268, 96%, 32%, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+
+    .offcanvas-header {
+        .btn-close {
+            @include sizeItens(2rem, 2rem, 0);
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .offcanvas-body {
+        .nav-link {
+            @include textStyle(white, 1.5rem, 600);
+        }
+
+        .nav-link:hover {
+            color: $darkPurple;
+        }
+    }
+}
