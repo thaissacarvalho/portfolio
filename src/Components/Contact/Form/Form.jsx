@@ -7,7 +7,7 @@ export default function FormContact() {
         controlId="floatingInput"
         label="Nome"
       >
-        <Form.Control type="text" placeholder="Nome"/>
+        <Form.Control type="text" placeholder="Nome" disabled/>
       </FloatingLabel>
 
       <FloatingLabel
@@ -15,15 +15,16 @@ export default function FormContact() {
         controlId="floatingInput"
         label="Email"
       >
-        <Form.Control type="email" placeholder="name@example.com" />
+        <Form.Control type="email" placeholder="name@example.com" disabled/>
       </FloatingLabel>
-      <FloatingLabel controlId="floatingTextarea2" label="Escreva a sua mensagem aqui" className="form__floating-textarea">
+      <FloatingLabel controlId="floatingTextarea2" label="Formulário indisponivel no momento." className="form__floating-textarea">
         <Form.Control
           as="textarea"
           placeholder="Escreva a sua mensagem aqui"
+          disabled
         />
       </FloatingLabel>
-      <Button as="input" type="submit" value="Enviar Mensagem" className="form__button"/>
+      <Button as="input" type="submit" value="Enviar Mensagem" className="form__button" disabled/>
     </form>
   )
 }
