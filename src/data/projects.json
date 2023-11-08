@@ -2,7 +2,7 @@
     {
         "id": 1,
         "image": "../assets/project-linkbio.svg",
-        "technologies": ["Vite", "React", "Tailwind CSS"],
+        "technologies": ["Javascript", "React", "Tailwind CSS", "Vite"],
         "title": "Linkbio",
         "time": "Julho/2023 a Agosto/2023",
         "description": "O direcionador de links afim de ao clicar, você ser levado ao local onde tenha as minhas redes sociais.",
@@ -18,5 +18,15 @@
         "description": "Criado com a Onebitcode, ele onde possui o intuito de uma calculadora real que faz contas básicas e intermediárias.",
         "code": "https://github.com/thaissacarvalho/Calculadora",
         "webSite": "https://thaissacarvalho.github.io/Calculadora/"
+    },
+    {
+        "id": 3,
+        "image": "../assets/project-linkbio-yasmin.svg",
+        "technologies": ["Javascript", "React", "Tailwind CSS", "Vite"],
+        "title": "Linkbio - Yasmin",
+        "time": "Novembro/2023",
+        "description": "Assim como o meu linkbio, o da Yasmin conta conta a função a mais de Dark Mode, onde direciona os seus seguidores as suas redes sociais.",
+        "code": "https://github.com/thaissacarvalho/linkbio-yasminBookstan",
+        "webSite": "https://linkbio-yasmin.vercel.app/"
     }
-]
+    ]
