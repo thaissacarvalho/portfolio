@@ -3,8 +3,9 @@
 @import "./TitleContact/titleContact";
 
 .contact__container {
-    width: 50%;
+    width: 90vw;
     @include disFlexCenter;
+    align-items: start;
     flex-direction: column;
     gap: 3rem;
 
@@ -17,7 +18,7 @@
         justify-self: flex-end;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 720px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
@@ -30,11 +31,16 @@
 
         .add-information__container {
             order: 1;
+            align-self: start;
         }
 
         .form {
             order: 2;
             grid-area: form;
         }
+    }
+
+    @media (min-width: 1024px) {
+        height: 400px;
     }
 }

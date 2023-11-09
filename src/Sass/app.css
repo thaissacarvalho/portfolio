@@ -12118,10 +12118,11 @@ textarea.form-control-lg {
 }
 
 .contact__container {
-  width: 50%;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: start;
   flex-direction: column;
   gap: 3rem;
 }
@@ -12132,7 +12133,7 @@ textarea.form-control-lg {
   order: 1;
   justify-self: flex-end;
 }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .contact__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12143,10 +12144,16 @@ textarea.form-control-lg {
   }
   .contact__container .add-information__container {
     order: 1;
+    align-self: start;
   }
   .contact__container .form {
     order: 2;
     grid-area: form;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__container {
+    height: 400px;
   }
 }
 
@@ -12764,7 +12771,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1024px) {
   .section__contact {
-    height: 100vh;
+    height: 550px;
   }
 }
 
@@ -12782,20 +12789,16 @@ textarea.form-control-lg {
   background-color: #75777C;
 }
 
-/* Largura da barra de rolagem */
 ::-webkit-scrollbar {
   width: 0.3125rem;
 }
 
-/* Estilo da barra de rolagem */
 ::-webkit-scrollbar-thumb {
   background-color: #7900FF;
 }
 
-/* Estilo da pista de rolagem */
 ::-webkit-scrollbar-track {
   background-color: #000000;
-  /* Cor da pista de rolagem */
 }
 
 body {
