@@ -20,7 +20,7 @@ export default function AboutMe() {
                     estratégico.
                 </p>
             </div>
-            <Button href="https://docs.google.com/document/d/e/2PACX-1vSecJVnAP1hRLmNAowiK_c6uGRkA2JzSBCwUpptvN_jVZUpGIuc1Hnv8RKfu5Chig/pub" className="about-me__resume" target="_blank">CURRICULO</Button>
+            <Button href="https://1drv.ms/w/s!AvyeC1pPN5L-jTTK5wHwFPRC8GjO?e=lG2XVg" className="about-me__resume" target="_blank">CURRICULO</Button>
         </div >
     )
 }

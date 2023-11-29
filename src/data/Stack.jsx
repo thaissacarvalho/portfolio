@@ -1,10 +1,10 @@
 import {
-    BiLogoBootstrap, BiLogoFigma, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, /*BiLogoMongodb*/ BiLogoReact,
-    /*BiLogoRedux*/ BiLogoSass, BiLogoTailwindCss, BiLogoTrello /*BiLogoTypescript*/
+    BiLogoBootstrap, BiLogoFigma, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoMongodb, BiLogoReact,
+    /*BiLogoRedux*/ BiLogoSass, BiLogoPostgresql, BiLogoTailwindCss, BiLogoTrello, BiLogoTypescript
 } from "react-icons/bi";
 import { FaCss3Alt, FaNode } from "react-icons/fa";
 import { PiWallFill } from 'react-icons/pi'
-import { /*SiMysql*/ SiNextdotjs, SiNotion, /*SiSequelize*/ SiStyledcomponents, SiVite } from "react-icons/si";
+import { /*SiMysql*/ SiNextdotjs, SiNotion, SiSequelize, SiStyledcomponents, SiVite } from "react-icons/si";
 
 const Stack = {
     Frontend: [
@@ -68,19 +68,32 @@ const Stack = {
             icon: <SiMysql/>,
             title: "MySQL",
             style: "text-[#] md:text-2xl"
-    ]    },
+    ]    },*/
         {
             id: 3,
-            icon: <BiLogoMongodb/>,
+            icon: <BiLogoMongodb />,
             title: "MongoDB",
             style: "text-[#] md:text-2xl"
-    ]    },
+
+        },
         {
             id: 4,
-            icon: <SiSequelize/>,
+            icon: <SiSequelize />,
             title: "Sequelize",
             style: "text-[#] md:text-2xl"
-    ]    }*/
+        },
+        {
+            id: 5,
+            icon: <BiLogoTypescript/>,
+            title: "Typescript",
+            style: "text-[#] md:text-2xl"
+        },
+        {
+            id: 6,
+            icon: <BiLogoPostgresql/>,
+            title: "PostgreSQL",
+            style: "text-[#] md:text-2xl"
+        },
     ],
     Tools: [
         {
@@ -105,12 +118,12 @@ const Stack = {
         },
         {
             id: 5,
-            icon: <SiNotion/>,
+            icon: <SiNotion />,
             title: "Notion",
         },
         {
             id: 6,
-            icon: <PiWallFill/>,
+            icon: <PiWallFill />,
             title: "Formik",
         },
     ]
