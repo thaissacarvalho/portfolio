@@ -9,7 +9,7 @@ export default function AboutMe() {
                     <h4 className="hero__im">Eu sou</h4>
                     <div className="hero__nameStack">
                         <h1 className="nameStack__name">Thaissa Carvalho
-                            <span className="nameStack__stack">, uma Desenvolvedora Fullstack.</span>
+                            <span className="nameStack__stack">, uma Desenvolvedora Back End.</span>
                         </h1>
                     </div>
                 </div>
