@@ -28,9 +28,5 @@ Este site foi projetado com o objetivo de tornar mais fácil para você conhecer
 - Vite
 
 - **E-mail:** thaissa-carvalho@outlook.com
-<<<<<<< HEAD
 - **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thaissacarvalho-ti/)
-=======
-- **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thaissa-carvalho-dev/)
->>>>>>> 7a8354c277a55bedb9ace702d22129892257ae17
 - **GitHub:** [Seu Perfil no GitHub](https://github.com/thaissacarvalho)
