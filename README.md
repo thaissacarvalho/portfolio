@@ -27,6 +27,6 @@ Este site foi projetado com o objetivo de tornar mais fácil para você conhecer
 - React-Boostrap
 - Vite
 
-- **E-mail:** thaissa.dos2003@outlook.com
-- **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thaissa-carvalho-dos-santos/)
+- **E-mail:** thaissa-carvalho@outlook.com
+- **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thaissacarvalho-ti/)
 - **GitHub:** [Seu Perfil no GitHub](https://github.com/thaissacarvalho)
