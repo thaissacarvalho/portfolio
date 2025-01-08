@@ -1,20 +1,18 @@
-import Header from '../Components/Layout/Header/Header';
-import Hero from '../Components/Hero/Hero';
-import Projects from '../Components/Projects/Projects';
-import Skills from '../Components/Skills/Skills';
-import Contact from '../Components/Contact/Contact';
-import Footer from '../Components/Layout/Footer/Footer';
+import { FaCog } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="home__page">
-      <Header />
-      <Hero />
-      <Projects />
-      <Skills />
-      <Contact />
-      <div className="home__line"></div>
-      <Footer />
-    </main>
+    <div className="maintenance-container">
+      <div className="message">
+        <h1>O SITE ESTÁ EM MANUTENÇÃO.</h1>
+        <p>Estamos trabalhando para melhorar a sua experiência. Volte logo!</p>
+      </div>
+      <div className="gear">
+        <FaCog size={50} className="cog-icon" />
+      </div>
+      <div className="button">
+        <a href="https://bio.bythaissa.com">ACESSE MEU LINK BIO</a>
+      </div>
+    </div>
   )
 }

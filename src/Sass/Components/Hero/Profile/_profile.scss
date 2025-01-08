@@ -1,5 +1,0 @@
-.profile__container {
-    @include sizeItens(22rem, 24rem, 50%);
-    @include disFlexCenter;
-    background: radial-gradient(50% 50% at 50% 50%, #7900FF 0%, rgba(50, 15, 133, 0.00) 100%, rgba(50, 15, 133, 0.00) 100%);
-}

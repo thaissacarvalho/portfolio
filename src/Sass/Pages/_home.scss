@@ -1,10 +1,56 @@
-.home__page {
-    background-color: $bgColor;
-    @include disFlexCenter;
+/* Estilos principais */
+.maintenance-container {
+    display: flex;
     flex-direction: column;
-
-    .home__line {
-        @include sizeItens(100%, 0.0625rem, 0);
-        background-color: $gray;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $sectionColor;
+    font-family: Arial, sans-serif;
+  }
+  
+  .message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message h1 {
+    font-size: 2.5rem;
+    color: $darkPurple;
+  }
+  
+  .message p {
+    font-size: 1.2rem;
+    color: $gray;
+  }
+  
+  /* Animação da engrenagem */
+  .gear {
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
     }
-}
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cog-icon {
+    color: $white;
+  }
+
+  .button {
+    margin-top: 20px;
+
+    a {
+        color: $darkPurple;
+
+        &:hover {
+            color: $gray;
+        }
+    }
+  }
+  
