@@ -43,8 +43,6 @@ export interface TranslationKey {
 
   // Articles
   articlesTitle: string;
-  title: string;
-  briefDescription: string;
 
   // Contact
   contactMe: string;

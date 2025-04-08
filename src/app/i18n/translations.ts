@@ -62,8 +62,6 @@ export const translations: Translations = {
     ],
     // Articles
     articlesTitle: "Articles",
-    title: "Title",
-    briefDescription: "Brief description...",
 
     // Contact
     contactMe: "Contact me",
@@ -134,8 +132,6 @@ export const translations: Translations = {
     ],
     // Artigos
     articlesTitle: "Artigos",
-    title: "Título",
-    briefDescription: "Breve descrição...",
 
     // Contato
     contactMe: "Contate-me",
