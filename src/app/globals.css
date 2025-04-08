@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-mocha-black: #0E0D0E;
+  --color-mocha-purple-light: #9F50F6;
+  --color-mocha-purple-dark: #7900FF;
+  --color-mocha-purple-darkness: #490099;
+  --color-mocha-gray: #D9D9D9;
+}

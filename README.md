@@ -1,32 +1,54 @@
-# Meu Portfolio ✨ 
+# React + TypeScript + Vite
 
-SEJA BEM VINDO 
-Este é o meu portfólio pessoal, onde você pode aprender mais sobre mim, explorar o meu currículo, conferir meus projetos mais recentes e entrar em contato comigo da maneira que preferir.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Sobre Mim
-Neste espaço, você encontrará informações relevantes sobre minha trajetória, formação acadêmica, experiência profissional e minhas áreas de especialização.
+Currently, two official plugins are available:
 
-Tem um botão para o curriculo, caso você deseje uma visão detalhada do meu histórico acadêmico e profissional, pode fazer o download do meu currículo em PDF diretamente a partir do meu portfólio.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Projetos 
-Aqui, você pode conferir alguns dos meus projetos mais recentes. Cada projeto inclui uma breve descrição, tecnologias utilizadas e links para os repositórios no GitHub ou demonstrações online.
+## Expanding the ESLint configuration
 
-## Contato
-Se você tem alguma pergunta, deseja discutir uma oportunidade de colaboração ou simplesmente deseja entrar em contato comigo, fique à vontade para escolher a maneira mais conveniente para você. Você pode me enviar um e-mail, conectar-se através das redes sociais e futuramente, você poderá preencher o formulário de contato no próprio site.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-Este site foi projetado com o objetivo de tornar mais fácil para você conhecer minhas habilidades de programação de forma prática e eficaz. Sinta-se à vontade para explorar e entrar em contato. Estou ansioso para conectar e colaborar com você!
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-![Imagem do Projeto](./public/picture-portfolio.png)
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Tecnologias Usadas
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-- Javascript
-- React
-- SASS
-- Boostrap
-- React-Boostrap
-- Vite
-
-- **E-mail:** thaissa-carvalho@outlook.com
-- **LinkedIn:** [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thaissacarvalho-ti/)
-- **GitHub:** [Seu Perfil no GitHub](https://github.com/thaissacarvalho)
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
