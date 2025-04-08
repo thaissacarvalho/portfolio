@@ -62,7 +62,6 @@ export const translations: Translations = {
     ],
     // Articles
     articlesTitle: "Articles",
-    articlesDescription: "Content simplifying certain configurations in article form",
     title: "Title",
     briefDescription: "Brief description...",
 
@@ -135,7 +134,6 @@ export const translations: Translations = {
     ],
     // Artigos
     articlesTitle: "Artigos",
-    articlesDescription: "Conteúdo simplifica certas configurações em forma de artigos",
     title: "Título",
     briefDescription: "Breve descrição...",
 
