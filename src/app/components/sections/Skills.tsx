@@ -8,8 +8,8 @@ export default function Skills() {
   const { t } = useI18n();
 
   return (
-    <section className="p-8" id="skills">
-      <div className="flex flex-col gap-6 p-4">
+    <section className="p-8 pb-3" id="skills">
+      <div className="flex flex-col gap-8 p-4">
         <TitleSection content={t('mySkills')} />
 
         <div className="grid grid-cols-3 md:grid-cols-5 gap-8">

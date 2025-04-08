@@ -1,17 +1,13 @@
-import React, { ReactNode } from 'react';
+import Link from 'next/link';
+import React from 'react';
 
-interface BrandProps {
-  href: string;
-  content: ReactNode;
-}
-
-export default function Brand({ href, content }: BrandProps) {
+export default function Brand() {
   return (
-    <a
+    <Link
       className="text-mocha-purple-dark hover:text-mocha-purple-light"
-      href={href}
+      href="bythaissa.com"
     >
-      {content}
-    </a>
+      bythaissa.com
+    </Link>
   );
 }

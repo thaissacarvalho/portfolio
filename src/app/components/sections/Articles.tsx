@@ -1,43 +1,31 @@
 'use client';
 
 import { useI18n } from '../../i18n/i18n-provider';
-import Image from 'next/image';
 import { FiChevronRight } from 'react-icons/fi';
+import { ArticleCard } from '@/app/ui/ArticleCard';
+import { useArticles } from '@/app/hooks/useArticles';
+import TitleSection from '@/app/ui/TitleSection';
 
 export default function Articles() {
   const { t } = useI18n();
+  const { articles, loading, error } = useArticles('thaissacarvalho');
 
-  const articles = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+  if (loading)
+    return (
+      <div className="container mx-auto px-4 py-16">Loading articles...</div>
+    );
+  if (error)
+    return <div className="container mx-auto px-4 py-16">Error: {error}</div>;
 
   return (
-    <section className="py-16" id="articles">
-      <div className="container mx-auto px-4">
-        <h2 className="section-title">{t('articlesTitle')}</h2>
-        <p className="mb-10">{t('articlesDescription')}</p>
+    <section className="p-8 pb-3" id="articles">
+      <div className="flex flex-col gap-8 p-4">
+        <TitleSection content={t('articlesTitle')} />
 
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {articles.map((article) => (
-              <div
-                key={article.id}
-                className="bg-mocha-black border border-purple-900 rounded-lg overflow-hidden"
-              >
-                <div className="aspect-video bg-gray-800">
-                  <Image
-                    src="/placeholder.svg?height=160&width=300"
-                    alt={`${t('title')} ${article.id}`}
-                    width={300}
-                    height={160}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-medium">{t('title')}</h3>
-                  <p className="text-sm text-gray-400">
-                    {t('briefDescription')}
-                  </p>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {articles.slice(0, 4).map((article) => (
+              <ArticleCard key={article.id} article={article} />
             ))}
           </div>
 

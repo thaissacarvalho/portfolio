@@ -4,7 +4,7 @@ export const translations: Translations = {
   en: {
     // Navigation
     home: "Home",
-    services:"Services",
+    services: "Services",
     skills: "Skills",
     projects: "Projects",
     articles: "Articles",
@@ -37,11 +37,29 @@ export const translations: Translations = {
 
     // Projects
     projectsTitle: "Projects",
-    projectName: "Project Name",
-    technologies: "Technologies",
-    projectLink: "",
-    
-
+    projectsList: [
+      {
+        id: 1,
+        title: "System Comment",
+        description: "A comment system with authentication, allowing users to create, edit and delete comments. Built with Node.js, Prisma and PostgreSQL.",
+        technologies: ["Node.js", "Express", "Prisma", "PostgreSQL", "JWT"],
+        link: "https://github.com/thaissacarvalho/system-comment-back-end"
+      },
+      {
+        id: 2,
+        title: "Ecommerce Full Stack",
+        description: "Complete e-commerce application with products, categories and shopping cart functionality.",
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Redux"],
+        link: "https://github.com/thaissacarvalho/e-commerce-full-stack"
+      },
+      {
+        id: 3,
+        title: "Back End Logister",
+        description: "Designed to manage user registration and login. It uses bcrypt to encrypt passwords and JWT for authentication and authorization, ensuring that user data is protected and API access is secure.",
+        technologies: ["Node.js", "Express", "TypeScript", "MongoDB", "Mongoose"],
+        link: "https://github.com/thaissacarvalho/back-end-logister"
+      }
+    ],
     // Articles
     articlesTitle: "Articles",
     articlesDescription: "Content simplifying certain configurations in article form",
@@ -50,7 +68,7 @@ export const translations: Translations = {
 
     // Contact
     contactMe: "Contact me",
-    
+
     // Footer
     footerDescription: "Thank you for exploring my website. I'm always open to exciting new contacts.",
     location: "Rio de Janeiro, Brazil",
@@ -92,10 +110,29 @@ export const translations: Translations = {
 
     // Projetos
     projectsTitle: "Projetos",
-    projectName: "Logister",
-    technologies: "Node.js, Express, Typescript, MongoDB e Mongoose",
-    projectLink: "https://github.com/thaissacarvalho/back-end-logister",
-
+    projectsList: [
+      {
+        id: 1,
+        title: "System Comment",
+        description: "Sistema de comentários com autenticação, permitindo que usuários criem, editem e deletem comentários. Construído com Node.js, Prisma e PostgreSQL.",
+        technologies: ["Node.js", "Express", "Prisma", "PostgreSQL", "JWT"],
+        link: "https://github.com/thaissacarvalho/system-comment-back-end"
+      },
+      {
+        id: 2,
+        title: "Ecommerce Full Stack",
+        description: "Aplicação completa de e-commerce com produtos, categorias e funcionalidade de carrinho de compras.",
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Redux"],
+        link: "https://github.com/thaissacarvalho/e-commerce-full-stack"
+      },
+      {
+        id: 3,
+        title: "Back End Logister",
+        description: "Projetada para gerenciar o registro e o login de usuários. Utiliza bcrypt para criptografar senhas e JWT para autenticação e autorização, garantindo que os dados dos usuários sejam protegidos e que o acesso à API seja seguro.",
+        technologies: ["Node.js", "Express", "TypeScript", "MongoDB", "Mongoose"],
+        link: "https://github.com/thaissacarvalho/back-end-logister"
+      }
+    ],
     // Artigos
     articlesTitle: "Artigos",
     articlesDescription: "Conteúdo simplifica certas configurações em forma de artigos",

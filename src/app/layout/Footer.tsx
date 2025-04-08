@@ -7,8 +7,6 @@ import LinkNav from '../ui/LinkNav';
 import CopyRight from '../ui/CopyRight';
 import ContactMe from '../ui/ContactMe';
 
-const bythaissa = { com: 'bythaissa.com' };
-
 export default function Footer() {
   const { t } = useI18n();
 
@@ -17,7 +15,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
           <div className="flex flex-col gap-4">
-            <Brand href={bythaissa.com} content={bythaissa.com} />
+            <Brand/>
 
             <p className="text-gray-400 mb-4">{t('footerDescription')}</p>
 

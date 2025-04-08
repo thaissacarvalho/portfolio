@@ -9,10 +9,10 @@ export default function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="p-8">
-      <div className="container max-w-[1024px] mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-center lg:justify-between">
-          <div className="md:w-1/2 mb-8 md:mb-0 lg:mr-2 text-center md:text-left">
+    <section className="p-8 flex justify-center">
+      <div className="flex flex-col p-4 gap-8 justify-center items-center max-w-[1024px] w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full">
+          <div className="lg:w-1/2 mb-8 lg:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-[#FFFFFF] to-[#490099] text-transparent bg-clip-text">
               <span className="block">{t('developer').split(' ')[0]}</span>
               <span className="block">
@@ -22,16 +22,19 @@ export default function Hero() {
 
             <p className="text-lg mb-6">{t('heroDescription')}</p>
 
-            <SocialLink />
+            <div className="flex">
+              <SocialLink />
+            </div>
           </div>
 
-          <div className="md:w-1/2 flex justify-center">
+          {/* Imagem - sempre centralizada */}
+          <div className="lg:w-1/2 flex justify-center">
             <Image
               src={EuSorrindo}
               alt="Thaissa Carvalho"
               width={320}
               height={320}
-              className="rounded-full relative w-64 h-64 md:w-80 md:h-80"
+              className="rounded-full w-64 h-64 md:w-80 md:h-80"
             />
           </div>
         </div>

@@ -12,7 +12,6 @@ import ButtonLSwitcher from '../ui/ButtonLSwitcher';
 export default function Header() {
   const { t, locale, changeLocale } = useI18n();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const bythaissa = { com: 'bythaissa.com' };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleLanguage = () => changeLocale(locale === 'pt' ? 'en' : 'pt');
@@ -20,7 +19,7 @@ export default function Header() {
   return (
     <header className="bg-mocha-black text-white py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Brand href={bythaissa.com} content={bythaissa.com} />
+        <Brand/>
         <ButtonMenu
           onClick={toggleMenu}
           content={isMenuOpen ? <IoClose size={24} /> : <BiMenu size={24} />}

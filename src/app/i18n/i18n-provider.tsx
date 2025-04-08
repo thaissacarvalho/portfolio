@@ -1,33 +1,34 @@
 "use client"
 
-import React, { createContext, useContext, ReactNode, useState } from 'react'
-import { translations } from './translations'
-import { AppLocales, TranslationKey } from '../types/i18n'
+import React, { createContext, useContext, ReactNode, useState } from 'react';
+import { translations } from './translations';
+import { AppLocales, TranslationKey, TranslationReturnType } from '../types/i18n';
 
 interface I18nContextType {
-  t: <K extends keyof TranslationKey>(key: K) => string
-  locale: AppLocales
-  changeLocale: (locale: AppLocales) => void
+  t: <K extends keyof TranslationKey>(key: K) => TranslationReturnType<K>;
+  locale: AppLocales;
+  changeLocale: (locale: AppLocales) => void;
 }
 
-const I18nContext = createContext<I18nContextType | undefined>(undefined)
+const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export function I18nProvider({ 
   children,
   defaultLocale = 'pt'
 }: { 
-  children: ReactNode
-  defaultLocale?: AppLocales
+  children: ReactNode;
+  defaultLocale?: AppLocales;
 }) {
   const [locale, setLocale] = useState<AppLocales>(defaultLocale)
 
-  const t = <K extends keyof TranslationKey>(key: K): string => {
-    return translations[locale][key] || key
+  const t = <K extends keyof TranslationKey>(key: K): TranslationReturnType<K> => {
+    const value = translations[locale][key];
+    return value as TranslationReturnType<K>;
   }
 
   const changeLocale = (newLocale: AppLocales) => {
     if (newLocale in translations) {
-      setLocale(newLocale)
+      setLocale(newLocale);
     }
   }
 
@@ -43,5 +44,5 @@ export function useI18n() {
   if (!context) {
     throw new Error('useI18n must be used within an I18nProvider')
   }
-  return context
+  return context;
 }
